@@ -1,0 +1,6 @@
+{
+  "name": "CleanBox Laundry",
+  "description": "Layanan cuci bersih, beres cepat dengan konsep desain Neobrutalism modern dan fungsional.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
