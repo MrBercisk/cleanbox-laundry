@@ -148,7 +148,7 @@ const handleBooking = () => {
     `Mohon segera diproses ya CleanBox! Terima kasih.`
   );
 
-  const waURL = `https://wa.me/6281234567890?text=${waMessage}`;
+  const waURL = `https://wa.me/6281334485889?text=${waMessage}`;
   
   // Open WhatsApp in a new window/tab safely
   setTimeout(() => {

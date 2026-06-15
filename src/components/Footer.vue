@@ -95,7 +95,7 @@ const scrollToSection = (id: string) => {
           </li>
           <li class="flex items-center gap-2.5">
             <Phone class="w-4 h-4 text-green-600 shrink-0" />
-            <a href="tel:+6281234567890" class="hover:underline">+62 812-3456-7890</a>
+            <a href="tel:+6281334485889" class="hover:underline">+62 812-3456-7890</a>
           </li>
           <li class="flex items-start gap-2.5">
             <MapPin class="w-4 h-4 text-red-500 shrink-0 mt-0.5" />

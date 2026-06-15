@@ -145,7 +145,7 @@ const formatRupiah = (value: number) => {
       <!-- Section Header -->
       <div class="flex flex-col items-start space-y-3 mb-12">
         <div class="bg-[#00BCD4] text-white border-2 border-[#0A0A0A] font-sans font-bold text-xs px-3 py-1 uppercase tracking-widest shadow-[2px_2px_0px_#0A0A0A]">
-          우리의 서비스 • OUR SERVICES
+           OUR SERVICES
         </div>
         <h2 class="font-display font-black text-3xl sm:text-4xl text-[#0A0A0A] uppercase tracking-tight">
           Layanan Kami

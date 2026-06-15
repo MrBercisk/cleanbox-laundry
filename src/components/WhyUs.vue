@@ -41,7 +41,7 @@ const paymentPartners = [
       <!-- Section Header -->
       <div class="flex flex-col items-center text-center space-y-3 mb-16">
         <div class="bg-[#CCFF00] text-[#0A0A0A] border-2 border-[#0A0A0A] font-sans font-bold text-xs px-3 py-1 uppercase tracking-widest shadow-neo-sm transform rotate-1 inline-block select-none">
-          특장점 • OUR STRENGTHS
+           OUR STRENGTHS
         </div>
         <h2 class="font-display font-black text-3xl sm:text-5xl text-white uppercase tracking-tight">
           Mengapa Harus CleanBox?
@@ -86,7 +86,7 @@ const paymentPartners = [
           </p>
         </div>
         <a 
-          href="https://wa.me/6281234567890?text=Halo%20CleanBox%20laundry%20saya%20mau%20request%20penjemputan%20cucian%20express"
+          href="https://wa.me/6281334485889?text=Halo%20CleanBox%20laundry%20saya%20mau%20request%20penjemputan%20cucian%20express"
           target="_blank"
           class="whitespace-nowrap bg-[#FFE500] hover:bg-[#CCFF00] text-[#0A0A0A] border-2 border-[#0A0A0A] px-6 py-3 font-display font-black uppercase text-xs shadow-neo-sm hover:translate-x-[-1px] hover:translate-y-[-1px] active:translate-x-[1px] active:translate-y-[1px] cursor-pointer"
         >

@@ -41,7 +41,7 @@ const testimonials: Testimonial[] = [
       <!-- Section Header -->
       <div class="flex flex-col items-center text-center space-y-3 mb-16">
         <div class="bg-[#CCFF00] text-[#0A0A0A] border-2 border-[#0A0A0A] font-sans font-bold text-xs px-3 py-1 uppercase tracking-widest shadow-neo-sm transform -rotate-1 inline-block select-none">
-          리뷰 • CUSTOMER STORIES
+           CUSTOMER STORIES
         </div>
         <h2 class="font-display font-black text-3xl sm:text-4xl uppercase text-[#0A0A0A] tracking-tight">
           Apa Kata Pelanggan Setia Kami?
