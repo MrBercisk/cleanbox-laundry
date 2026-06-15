@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { Sparkles, HelpingHand } from 'lucide-vue-next';
 
-const imageSrc = '/src/assets/images/industrial_washers_1781535848917.jpg';
+import washerImg from '@/src/assets/images/industrial_washers_1781535848917.jpg'
+
 
 const scrollToBooking = () => {
   const form = document.querySelector('#reservasi');
@@ -23,7 +24,7 @@ const scrollToBooking = () => {
         <div class="relative w-full max-w-[420px] aspect-[4/5] border-[3px] border-[#0A0A0A] shadow-neo bg-[#0A0A0A] overflow-hidden transform -rotate-1">
           <!-- Custom industrial laundry machine photo -->
           <img 
-            :src="imageSrc" 
+            :src="washerImg" 
             alt="CleanBox Industrial Laundry Row" 
             class="w-full h-full object-cover contrast-125 brightness-90 grayscale-10"
             referrerpolicy="no-referrer"
