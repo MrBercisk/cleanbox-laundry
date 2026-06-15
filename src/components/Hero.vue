@@ -3,7 +3,7 @@ import { Zap, Truck, CreditCard, ChevronRight } from 'lucide-vue-next';
 
 const emit = defineEmits(['start-booking', 'view-services']);
 
-const imageSrc = '/src/assets/images/hero_laundry_1781535828460.jpg';
+const imageSrc = '/images/hero_laundry_1781535828460.jpg'
 
 const scrollToElement = (id: string) => {
   const element = document.querySelector(id);

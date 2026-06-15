@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Sparkles, HelpingHand } from 'lucide-vue-next';
 
-import washerImg from '@/assets/images/industrial_washers_1781535848917.jpg'
+const washerImg = '/images/industrial_washers_1781535848917.jpg'
 
 
 const scrollToBooking = () => {
