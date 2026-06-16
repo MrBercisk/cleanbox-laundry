@@ -80,7 +80,7 @@ const scrollToElement = (id: string) => {
             <div class="p-1 bg-[#00BCD4] border-2 border-[#0A0A0A] text-[#FFFFFF]">
               <CreditCard class="w-4 h-4 text-white" />
             </div>
-            <span>10+ Metode Bayar</span>
+            <span>3+ Metode Bayar</span>
           </div>
         </div>
       </div>

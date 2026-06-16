@@ -40,7 +40,7 @@ const scrollToBooking = () => {
         <!-- Eyebrow tagline -->
         <div class="flex items-center gap-2">
           <div class="bg-[#FFE500] text-[#0A0A0A] border-[2px] border-[#0A0A0A] px-2.5 py-1 text-xs font-black uppercase font-display select-none">
-            소개 • INTRODUCTION
+            INTRODUCTION
           </div>
           <span class="font-sans font-bold text-xs text-[#0A0A0A]/50 tracking-wider">EST. 2014</span>
         </div>

@@ -112,10 +112,6 @@ const scrollToSection = (id: string) => {
         © {{ new Date().getFullYear() }} CLEANBOX LAUNDRY. ALL RIGHTS RESERVED.
       </span>
 
-      <!-- Neobrutalist custom badge credit -->
-      <span class="bg-[#0A0A0A] text-white border border-[#0A0A0A] px-2.5 py-1 text-[10px] tracking-widest uppercase font-display select-none">
-        MANAGED BY BERANI
-      </span>
     </div>
   </footer>
 </template>
