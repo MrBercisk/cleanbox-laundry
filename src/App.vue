@@ -10,6 +10,10 @@ import BookingForm from './components/BookingForm.vue';
 import Testimonials from './components/Testimonials.vue';
 import Footer from './components/Footer.vue';
 
+// Scroll animation composable
+import { useScrollAnimation } from './composables/useScrollAnimation';
+useScrollAnimation();
+
 // State shared between AI Estimator / Service cards and the Booking Form
 const autofillData = ref<{
   serviceRecommendation: string;
@@ -19,7 +23,6 @@ const autofillData = ref<{
 
 // Shared action: handle service preset choice
 const handleSelectService = (serviceId: string) => {
-  // Translate service ID to full recommendation label
   let name = "Daily Kiloan";
   if (serviceId === 'cuci_setrika') name = "Cuci & Setrika";
   else if (serviceId === 'sepatu') name = "Laundry Sepatu";
@@ -28,7 +31,6 @@ const handleSelectService = (serviceId: string) => {
   else if (serviceId === 'gorden') name = "Laundry Gorden";
   else if (serviceId === 'stroller') name = "Laundry Stroller";
   else if (serviceId === 'boneka') name = "Laundry Boneka";
-
   autofillData.value = {
     serviceRecommendation: name,
     estimatedWeight: 1,
@@ -48,6 +50,7 @@ const handleAutoFill = (data: {
 
 <template>
   <div class="min-h-screen bg-[#FFFFFF] font-sans text-[#0A0A0A] flex flex-col justify-between selection:bg-[#FFE500] selection:text-[#0A0A0A]">
+
     <!-- Accessible alert ticker -->
     <div class="bg-[#0A0A0A] text-white py-2 px-6 overflow-hidden border-b-[3px] border-[#0A0A0A]">
       <div class="max-w-[1280px] mx-auto flex items-center justify-between text-xs font-display font-black uppercase tracking-widest">
@@ -62,44 +65,45 @@ const handleAutoFill = (data: {
     <!-- Header Navigation -->
     <Navbar />
 
-    <!-- Core Page Content Main Scaffolding -->
+    <!-- Core Page Content -->
     <main>
-      <!-- Hero Presentation -->
+
+      <!-- Hero-->
       <Hero @select-service="handleSelectService" />
 
-      <!-- Complete Service Catalog -->
-      <Services @select-service="handleSelectService" />
+      <!-- Services -->
+      <div data-aos="fade-up" data-aos-duration="700">
+        <Services @select-service="handleSelectService" />
+      </div>
 
-      <!-- Story Branding Section -->
-      <AboutInfo />
+      <!-- AboutInfo -->
+      <div data-aos="fade-right" data-aos-duration="700">
+        <AboutInfo />
+      </div>
 
-      <!-- Trust Badges & Payments Channels -->
-      <WhyUs />
+      <!-- WhyUs -->
+      <div data-aos="fade-left" data-aos-duration="700">
+        <WhyUs />
+      </div>
 
-      <!-- AI Estimated Billing Box -->
-      <AiEstimator @auto-fill="handleAutoFill" />
+      <!-- AI Estimator -->
+      <div data-aos="zoom-in" data-aos-duration="600">
+        <AiEstimator @auto-fill="handleAutoFill" />
+      </div>
 
-      <!-- Core Reservation engine -->
-      <BookingForm :autofillData="autofillData" />
+      <!-- Booking Form-->
+      <div data-aos="fade-up" data-aos-duration="700">
+        <BookingForm :autofillData="autofillData" />
+      </div>
 
-      <!-- Customer Testimonials Review grid -->
-      <Testimonials />
+      <!-- Testimonials -->
+      <div data-aos="fade-in" data-aos-duration="900">
+        <Testimonials />
+      </div>
+
     </main>
 
-    <!-- Footer Area -->
+    <!-- Footer -->
     <Footer />
   </div>
 </template>
-
-<style>
-/* Global smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Aligns perfectly with the sticky Navbar */
-}
-
-/* Scrollbar adjustment */
-::-webkit-scrollbar-track {
-  background: #FFFFFF !important;
-}
-</style>

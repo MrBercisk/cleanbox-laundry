@@ -1,0 +1,49 @@
+/* ============================================================
+   SCROLL ANIMATIONS — drop this into your main CSS / App.vue
+   Works with data-aos="fade-up | fade-in | slide-left | etc."
+   Optional modifiers: data-aos-delay="200" (in ms)
+   ============================================================ */
+
+/* ── Base: elements start hidden ─────────────────────────── */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition-duration: 600ms;
+  will-change: opacity, transform;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ── Animation variants: initial (hidden) states ─────────── */
+[data-aos="fade-up"]    { transform: translateY(40px); }
+[data-aos="fade-down"]  { transform: translateY(-40px); }
+[data-aos="fade-left"]  { transform: translateX(40px); }
+[data-aos="fade-right"] { transform: translateX(-40px); }
+[data-aos="fade-in"]    { transform: none; }
+[data-aos="zoom-in"]    { transform: scale(0.92); }
+[data-aos="zoom-out"]   { transform: scale(1.08); }
+[data-aos="flip-up"]    { transform: perspective(600px) rotateX(20deg); }
+
+/* ── Animated state (class added by JS) ──────────────────── */
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Delay helpers (add data-aos-delay via inline style) ─── */
+/* Usage: <div data-aos="fade-up" style="transition-delay: 200ms"> */
+
+/* ── Duration helpers ────────────────────────────────────── */
+[data-aos][data-aos-duration="300"]  { transition-duration: 300ms; }
+[data-aos][data-aos-duration="500"]  { transition-duration: 500ms; }
+[data-aos][data-aos-duration="700"]  { transition-duration: 700ms; }
+[data-aos][data-aos-duration="900"]  { transition-duration: 900ms; }
+[data-aos][data-aos-duration="1200"] { transition-duration: 1200ms; }
